@@ -12,7 +12,7 @@ CustomerValidation customerValidation;
 
 	public void add(Gamer gamer) {
 		if (this.customerValidation.check(gamer)==true) {
-			System.out.println(gamer.getFirstName()+" eklendi.");
+			System.out.println(gamer.getFirstName()+" eklesdadsndi.");
 		}
 		
 			
