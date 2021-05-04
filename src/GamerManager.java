@@ -12,9 +12,12 @@ CustomerValidation customerValidation;
 
 	public void add(Gamer gamer) {
 		if (this.customerValidation.check(gamer)==true) {
-			System.out.println(gamer.getFirstName()+" eklesdadsndi.");
+			System.out.println(gamer.getFirstName()+" eklendi.");
 		}
-		
+		else {
+			
+			System.out.println("Mernis bilgileriyle kiþi bilgisi eþleþmedi.");
+		}
 			
 		}
 		
@@ -30,13 +33,17 @@ CustomerValidation customerValidation;
 		
 	
 	public void delete(Gamer gamer) {
-		
-		
+		if (this.customerValidation.check(gamer)) {
 			System.out.println(gamer.getFirstName()+" silindi.");
+		}
+		else {
+		
+			System.out.println("Mernis bilgileriyle kiþi bilgisi eþleþmedi.");
 			
 		}
 		
 }
+	}
 	
 
 
